@@ -79,13 +79,14 @@ header a:hover {
 
 /* modal styles */
 .modal {
-  width: 300px;
+  width: 320px;
   padding: 30px;
   margin: 100px auto;
   border-radius: 10px;
   background: white;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-sizing: border-box;
 }
 .new-request {
   width: 100%;
@@ -171,17 +172,6 @@ button {
   font-weight: 400;
   text-transform: uppercase;
 }
-/* Media Queries */
-@media only screen and (max-width: 700px) {
-  .content {
-    width: 300px;
-    margin: 40px auto;
-  }
-  header {
-    text-align: center;
-    border-left: 4px solid #e4007d;
-  }
-}
 
 /* notification style */
 .notification {
@@ -200,4 +190,16 @@ button {
 }
 .notification.active{
   margin-top: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+  .content {
+    width: 300px;
+    margin: 40px auto;
+  }
+  header {
+    text-align: center;
+    border-left: 4px solid #e4007d;
+  }
 }
